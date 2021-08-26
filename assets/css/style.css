@@ -265,6 +265,7 @@ body{
 }
 .c-btn-banner-hire:hover{
     background: magenta;
+    border: 1px solid magenta;
     color: white;
     transition: 0.4s;
 }
@@ -285,6 +286,20 @@ body{
 .about-left{
     margin-top: 100px;
 }
+.c-btn-about-more{
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    font-family: var(--Asap-Medium);
+    border: 1px solid black;
+    z-index: 99;
+}
+.c-btn-about-more:hover{
+    background: magenta;
+    border: 1px solid magenta;
+    color: white;
+    transition: 0.4s;
+}
 .upline{
     height: 3px;
     width: 80px;
@@ -299,4 +314,40 @@ body{
     font-family: var(--Asap-Regular);
     color: #b9b9b9;
 }
+.about-right a{
+    width: 100%;
+    transition: all 1s ease;
+}
+.about-right a:hover img{
+    transform: scale(1.3);
+}
 /* about section end  */
+
+/* service section start  */
+#service{
+    margin-top: 100px;
+    background: #f6f6f6;
+    padding-top: 50px;
+}
+.service-title{
+    font-family: var(--Asap-Bold);
+    color: #6f6f6f;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.service-item{
+    margin-top: 20px !important;
+    padding: 20px;
+}
+.service-item i{
+    font-size: 50px;
+    color: #4d4d4d;
+    margin-bottom: 15px;
+}
+.service-item h4{
+    color: #4d4d4d;
+    font-size: 20px;
+    font-family: var(--Asap-Medium);
+}
+/* service section end  */
