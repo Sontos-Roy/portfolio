@@ -31,6 +31,11 @@ body{
     font-family: Montserrat-Regular;
     font-weight: 400;
 }
+.upline{
+    height: 3px;
+    width: 80px;
+    background: gray;
+}
 
 :root{
 	/*Theme colors*/
@@ -47,114 +52,6 @@ body{
     --Lato-Light: Lato-Light;
     --Lato-Regular: Lato-Regular;
 }
-/* animate-btn animation global start  */
-    /* .animate-btn {
-        width: 155px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        background: gray;
-        border-radius: 5px;
-        overflow: hidden;
-        text-decoration: none;
-    }
-
-    .animate-btn:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #fff;
-        width: 100%;
-        height: 100%;
-        transition: transform .3s ease .2s;
-    }
-
-    .animate-btn:hover:before {
-        transform: translateX(-100%);
-        transition: transform .3s ease;
-    }
-
-    .animate-btn__inner {
-        position: relative;
-        width: 150px;
-        height: 42px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        background: rgb(216, 216, 216);
-        cursor: pointer;
-    }
-
-    .animate-btn__arrow {
-        position: absolute;
-        right: 100%;
-        top: 22px;
-        height: 6px;
-        width: 50px;
-        background: #fff;
-        transform: translateX(-10px) scaleX(1) scaleY(1);
-        transition: width .3s ease, transform .3s ease;
-    }
-
-    .animate-btn:hover .animate-btn__arrow {
-        transform: translateX(150px) scaleX(.5) scaleY(.5);
-        transition: width .3s ease 2s, transform .3s ease .2s;
-    }
-
-    .animate-btn__arrow:before,
-    .animate-btn__arrow:after {
-        content: '';
-        position: absolute;
-        right: -10px;
-        height: 0;
-        width: 0;
-        border: 30px solid transparent;
-        border-left: 20px solid #fff;
-        border-right: 0;
-    }
-
-    .animate-btn__arrow:before {
-        bottom: 20%;
-        border-bottom: 0;
-    }
-
-    .animate-btn__arrow:after {
-        top: 20%;
-        border-top: 0;
-    }
-
-    .animate-btn:hover .animate-btn__arrow:before {
-        border: 10px solid transparent;
-        border-left: 20px solid #fff;
-        border-bottom: 0;
-        border-right: 0;
-    }
-
-    .animate-btn:hover .animate-btn__arrow:after {
-        border: 10px solid transparent;
-        border-left: 20px solid #fff;
-        border-top: 0;
-        border-right: 0;
-    }
-
-    .animate-btn__text {
-        color: black;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        transform: translateX(0);
-        transition: transform .3s ease;
-    }
-
-    .animate-btn:hover .animate-btn__text {
-        transform: translateX(-20px);
-        transition: transform .3s ease .2s;
-    } */
-/* animate-btn animation global end  */
 
 /* header start  */
 #header{
@@ -290,6 +187,7 @@ body{
     border-radius: 0;
     text-transform: uppercase;
     padding: 10px 40px;
+    margin: 20px 0;
     font-family: var(--Asap-Medium);
     border: 1px solid black;
     z-index: 99;
@@ -300,11 +198,7 @@ body{
     color: white;
     transition: 0.4s;
 }
-.upline{
-    height: 3px;
-    width: 80px;
-    background: gray;
-}
+
 .about-title{
     font-family: var(--Asap-Bold);
     color: #4d4d4d;
@@ -351,3 +245,149 @@ body{
     font-family: var(--Asap-Medium);
 }
 /* service section end  */
+
+/* charts section start  */
+#Projects-charts{
+    padding-top: 50px;
+    padding-bottom: 500px !important;
+}
+.canvasjs-chart-credit{
+    display: none !important;
+}
+
+/* charts section end  */
+/* skill section start*/
+.skill-title{
+    margin-bottom: 40px;
+    font-family: var(--Asap-Bold);
+    color: #6f6f6f;
+}
+.progress-box{
+    margin-bottom: 40px;
+}
+.progress-box .progress-lebel{
+    font-family: var(--Lato-Regular);
+    text-transform: uppercase;
+}
+.progress-box .progress-lebel span{
+    margin-left: 20px;
+}
+.progress-box .progress{
+    height: 5px;
+}
+.progress-box .progress .progress-bar{
+    background: #10c9c3;
+
+}
+.progress-html-css .progress .progress-bar{
+    animation: progress-html-css 1.5s both;
+
+}
+.progress-bootstrap .progress .progress-bar{
+    animation: progress-bootstrap 1.5s both;
+}
+.progress-psd .progress .progress-bar{
+    animation: progress-psd 1.5s both;
+}
+.progress-js .progress .progress-bar{
+    animation: progress-js 1.5s both;
+}
+.progress-php .progress .progress-bar{
+    animation: progress-php 1.5s both;
+}
+.progress-database .progress .progress-bar{
+    animation: progress-database 1.5s both;
+}
+.progress-wordpress .progress .progress-bar{
+    animation: progress-wordpress 1.5s both;
+}
+@keyframes progress-html-css {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes progress-bootstrap {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes progress-psd {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes progress-js {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes progress-php {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes progress-database {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes progress-wordpress {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* accrodion section  */
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+.c-accordion{
+    background: #10c9c3;
+    color: #191919;
+    font-family: var(--Lato-Regular);
+}
+.c-accordion:not(.collapsed){
+    color: #ffff;
+    background: #b9b9b9;
+}
+.accordion-body{
+    font-family: var(--Asap-Medium);
+    color: #b9b9b9;
+    background: #333;
+}
+/* skill section end  */
